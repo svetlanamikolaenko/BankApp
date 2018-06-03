@@ -23,18 +23,9 @@ namespace BankApp.Controllers
             _context.Dispose();
         }
 
-        // GET: Managers
-        public ActionResult Random()
-        {
-            var manager = new Manager() {LastName = "Shrek"};
-            return View(manager);
-        }
-
         public ViewResult Index()
         {
-            var managers = _context.Managers.Include(m => m.Role).ToList();
-
-            return View(managers);
+            return View();
         }
 
         public ActionResult Details(int id)
