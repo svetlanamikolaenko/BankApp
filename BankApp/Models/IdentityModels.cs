@@ -23,6 +23,8 @@ namespace BankApp.Models
         public DbSet<Manager> Managers { get; set; }
         public DbSet<Client> Clients { get; set; }
         public DbSet<Role> Roles { get; set; }
+        public DbSet<Loan> Loans { get; set; }
+        //public DbSet<Deposit> Deposits { get; set; }
 
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
