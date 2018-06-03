@@ -208,6 +208,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\Api\ClientsController.cs" />
     <Compile Include="Controllers\Api\ManagersController.cs" />
     <Compile Include="Controllers\ClientsController.cs" />
     <Compile Include="Controllers\DepositsController.cs" />
@@ -215,6 +216,7 @@
     <Compile Include="Controllers\LoansController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\ManagersController.cs" />
+    <Compile Include="Dtos\ClientDto.cs" />
     <Compile Include="Dtos\ManagerDto.cs" />
     <Compile Include="Dtos\RoleDto.cs" />
     <Compile Include="Global.asax.cs">
@@ -238,6 +240,7 @@
     <Compile Include="Models\Role.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="ViewModels\ClientFormViewModel.cs" />
     <Compile Include="ViewModels\ManagerFormViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -480,6 +483,8 @@
     <Content Include="Views\Managers\CreateForm.cshtml" />
     <Content Include="Views\Clients\Index.cshtml" />
     <Content Include="Views\Clients\Details.cshtml" />
+    <Content Include="Views\Clients\ClientForm.cshtml" />
+    <Content Include="Views\Clients\CreateForm.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -33,7 +33,7 @@ namespace BankApp.Controllers.Api
         //GET /api/managers/1
         public IHttpActionResult GetManager(int id)
         {
-            var manager = _context.Managers.SingleOrDefault(c => c.Id == id);
+            var manager = _context.Managers.SingleOrDefault(m => m.Id == id);
 
             if (manager == null)
                 return NotFound();
@@ -64,7 +64,7 @@ namespace BankApp.Controllers.Api
             if (!ModelState.IsValid)
                 return BadRequest();
 
-            var managerInDb = _context.Managers.SingleOrDefault(c => c.Id == id);
+            var managerInDb = _context.Managers.SingleOrDefault(m => m.Id == id);
 
             if (managerInDb == null)
                 return NotFound();
@@ -79,7 +79,7 @@ namespace BankApp.Controllers.Api
         [HttpDelete]
         public IHttpActionResult DeleteManager(int id)
         {
-            var managerInDb = _context.Managers.SingleOrDefault(c => c.Id == id);
+            var managerInDb = _context.Managers.SingleOrDefault(m => m.Id == id);
 
             if (managerInDb == null)
                 return NotFound();

@@ -15,9 +15,11 @@ namespace BankApp.App_Start
             // Domain to Dto
             Mapper.CreateMap<Manager, ManagerDto>();
             Mapper.CreateMap<Role, RoleDto>();
+            Mapper.CreateMap<Client, ClientDto>();
 
             // Dto to Domain
-            Mapper.CreateMap<ManagerDto, Manager>().ForMember(c => c.Id, opt => opt.Ignore());
+            Mapper.CreateMap<ManagerDto, Manager>().ForMember(m => m.Id, opt => opt.Ignore());
+            Mapper.CreateMap<ClientDto, Client>().ForMember(c => c.Id, opt => opt.Ignore());
 
 
         }
