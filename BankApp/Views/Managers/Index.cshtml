@@ -24,7 +24,7 @@ else
         @foreach (var manager in Model)
         {
             <tr>
-                <td>@Html.ActionLink(manager.FullName, "Details", "Managers", new { id = manager.Id }, null)</td>
+                <td>@Html.ActionLink(manager.FullName, "Edit", "Managers", new { id = manager.Id }, null)</td>
                 <td>@manager.Role.Name</td>
             </tr>
         }
