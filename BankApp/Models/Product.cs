@@ -12,10 +12,10 @@ namespace BankApp.Models
         [StringLength(50)]
         public string Name { get; set; }
         [Required]
-        public int Period { get; set; }
+        public int? Period { get; set; }
         [Required]
         [Range(1,100)]
-        public int Procent { get; set; }
+        public int? Procent { get; set; }
         
     }
 }

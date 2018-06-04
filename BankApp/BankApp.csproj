@@ -211,15 +211,18 @@
     <Compile Include="Controllers\Api\ClientsController.cs" />
     <Compile Include="Controllers\Api\LoansController.cs" />
     <Compile Include="Controllers\Api\ManagersController.cs" />
+    <Compile Include="Controllers\Api\OpenLoansController.cs" />
     <Compile Include="Controllers\ClientsController.cs" />
     <Compile Include="Controllers\DepositsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoansController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\ManagersController.cs" />
+    <Compile Include="Controllers\OpenLoansController.cs" />
     <Compile Include="Dtos\ClientDto.cs" />
     <Compile Include="Dtos\LoanDto.cs" />
     <Compile Include="Dtos\ManagerDto.cs" />
+    <Compile Include="Dtos\OpenLoanDto.cs" />
     <Compile Include="Dtos\RoleDto.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -236,6 +239,18 @@
     <Compile Include="Migrations\201806031838278_LoanAdded.Designer.cs">
       <DependentUpon>201806031838278_LoanAdded.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201806041741259_test.cs" />
+    <Compile Include="Migrations\201806041741259_test.Designer.cs">
+      <DependentUpon>201806041741259_test.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806041817089_OpenLoanAdded.cs" />
+    <Compile Include="Migrations\201806041817089_OpenLoanAdded.Designer.cs">
+      <DependentUpon>201806041817089_OpenLoanAdded.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806041915024_OpenLoanControllers.cs" />
+    <Compile Include="Migrations\201806041915024_OpenLoanControllers.Designer.cs">
+      <DependentUpon>201806041915024_OpenLoanControllers.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Base.cs" />
@@ -245,6 +260,7 @@
     <Compile Include="Models\Loan.cs" />
     <Compile Include="Models\Manager.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\OpenLoan.cs" />
     <Compile Include="Models\Product.cs" />
     <Compile Include="Models\Role.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -252,6 +268,7 @@
     <Compile Include="ViewModels\ClientFormViewModel.cs" />
     <Compile Include="ViewModels\LoanFormViewModel.cs" />
     <Compile Include="ViewModels\ManagerFormViewModel.cs" />
+    <Compile Include="ViewModels\OpenLoanFormViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
@@ -497,6 +514,8 @@
     <Content Include="Views\Loans\Index.cshtml" />
     <Content Include="Views\Loans\Details.cshtml" />
     <Content Include="Views\Loans\LoanForm.cshtml" />
+    <Content Include="Views\OpenLoans\Index.cshtml" />
+    <Content Include="Views\OpenLoans\New.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -524,6 +543,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201806031838278_LoanAdded.resx">
       <DependentUpon>201806031838278_LoanAdded.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806041741259_test.resx">
+      <DependentUpon>201806041741259_test.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806041817089_OpenLoanAdded.resx">
+      <DependentUpon>201806041817089_OpenLoanAdded.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806041915024_OpenLoanControllers.resx">
+      <DependentUpon>201806041915024_OpenLoanControllers.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -22,6 +22,7 @@ namespace BankApp.Models
             {
                 return FirstName + " " + LastName;
             }
+            set { }
         }
     }
 }

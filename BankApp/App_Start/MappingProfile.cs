@@ -17,11 +17,13 @@ namespace BankApp.App_Start
             Mapper.CreateMap<Role, RoleDto>();
             Mapper.CreateMap<Loan, LoanDto>();
             Mapper.CreateMap<Client, ClientDto>();
+            Mapper.CreateMap<OpenLoan, OpenLoanDto>();
 
             // Dto to Domain
             Mapper.CreateMap<ManagerDto, Manager>().ForMember(m => m.Id, opt => opt.Ignore());
             Mapper.CreateMap<ClientDto, Client>().ForMember(c => c.Id, opt => opt.Ignore());
             Mapper.CreateMap<LoanDto, Loan>().ForMember(l => l.Id, opt => opt.Ignore());
+            Mapper.CreateMap<OpenLoanDto, OpenLoan>().ForMember(o => o.Id, opt => opt.Ignore()); ;
 
 
         }
