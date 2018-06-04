@@ -23,8 +23,8 @@ namespace BankApp.App_Start
             Mapper.CreateMap<ManagerDto, Manager>().ForMember(m => m.Id, opt => opt.Ignore());
             Mapper.CreateMap<ClientDto, Client>().ForMember(c => c.Id, opt => opt.Ignore());
             Mapper.CreateMap<LoanDto, Loan>().ForMember(l => l.Id, opt => opt.Ignore());
-            Mapper.CreateMap<OpenLoanDto, OpenLoan>().ForMember(o => o.Id, opt => opt.Ignore()); ;
-
+            Mapper.CreateMap<OpenLoanDto, OpenLoan>().ForMember(o => o.Id, opt => opt.Ignore());
+            Mapper.CreateMap<RoleDto, Role>().ForMember(o => o.Id, opt => opt.Ignore());
 
         }
     }
